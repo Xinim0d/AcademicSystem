@@ -1,0 +1,6 @@
+@AkademineSistema_HostAddress = http://localhost:5175
+
+GET {{AkademineSistema_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

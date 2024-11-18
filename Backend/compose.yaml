@@ -1,0 +1,6 @@
+﻿services:
+  akademinesistema:
+    image: akademinesistema
+    build:
+      context: .
+      dockerfile: AkademineSistema/Dockerfile
