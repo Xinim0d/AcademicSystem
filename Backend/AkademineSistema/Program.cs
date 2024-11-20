@@ -21,7 +21,8 @@ public class Program
         builder.Services.AddDbContext<AcademicSystemDbContext>(options => options.UseNpgsql(connectionString));
 
         var app = builder.Build();
-
+        
+        app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {

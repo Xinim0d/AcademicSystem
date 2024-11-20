@@ -32,7 +32,8 @@ public class SubjectController : ControllerBase
         return Created("", new GetSubjectDto(newSubject.Id, newSubject.Title, newSubject.Description));
 
     }
-
+    
+    
     [HttpGet]
     public async Task<ActionResult> GetSubjectList()
     {
